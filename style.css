@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: calc((100vh - 380px) / 2);
+}
+body {
+  overflow: hidden;
+}
+.APP {
+  background-color: orange;
+  height: 100vh;
+}
+.app__Content {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  border-radius: 3px;
+  height: 380px;
+  position: relative;
+}
+.app__Content .app__header {
+  background-color: #000000d6;
+  color: white;
+  height: 50px;
+}
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__header h4 {
+  text-align: left;
+  font-family: "Fredoka", sans-serif;
+  font-size: 19px;
+  padding-left: 20px;
+}
+.app__header h3 {
+  color: white;
+  font-family: "Fredoka", sans-serif;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.container .app__Content h1,
+h2 {
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+}
+.container .app__Content h1 {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 40px;
+}
+.container .app__Content h2 {
+  font-weight: 500;
+  font-size: 23px;
+  margin-top: 10px;
+}
+.app__weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: center;
+}
+.search input {
+  width: 170%;
+  height: 35px;
+  margin: auto;
+  border: 2.5px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.search input:hover {
+  outline: none;
+}
+.search {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+.app__weather h3 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+}
+.app__weather h4 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.search button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
