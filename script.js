@@ -11,23 +11,10 @@ document.getElementById('App__Date').textContent = days + ' / ' + months + ' / '
 
 
 function wetherApp() {
-   // fetch(`./ma.json`)
-   //    .then(response => {
-   //       return response.json();
-   //    })
-   //    .then(jsondata => {
-   //       for (let i = 0; i < jsondata.length; i++) {
-   //          const Cities =  jsondata[i].city;
-   //          const CoptionElement = document.createElement('option');
-   //          document.getElementById('countrys').appendChild(CoptionElement).setAttribute('value', Cities);
-   //       }
-   //    })
-
-
+   
    async function positionFunction() {
 
       var CityName = document.getElementById('country').value;
-      // var CityName = 'Errachidia';
       var limit = 1;
       const request2 = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${CityName}&limit=${limit}&appid=${API_KEY}`);
       const response2 = await request2.json();
@@ -50,7 +37,6 @@ function wetherApp() {
    }
    positionFunction()
 }
-// wetherApp()
 
 
 
