@@ -1,4 +1,4 @@
-const API_KEY = 'c4c3457edb23296ae6caf2ef42d578b9';
+const API_KEY = 'Enter Your Api Key => https://openweathermap.org/api ';
 
 
 var DateNow = new Date();
